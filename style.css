@@ -1,110 +1,62 @@
 * {
-
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.header {
-  padding: 20px;
-  background-color: pink;
+.navbar {
+  background: turquoise;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
+  list-style-type: none;
+  height: auto;
+  justify-content: space-around;
   align-items: center;
-  
 }
 
-
-.navbar li{
-  list-style: none;
-  display: flex;
-  padding:20px;
- 
-}
-
-.logo img{
+.navbar>.logo>img {
   height: 100px;
-  width: 180px;
-  
+  width: 200px;
+  padding-top: 1em;
 }
 
-.navbar li ul a{
-  text-decoration: none;
-  color: #824336;
-  padding: 10px;
-  font-size: 30px;
-display: block;
+.navbar>li {
+  padding: 1em;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
 }
-.banner {
-  background-image: url("Bg.jpeg");
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 100%;
+
+.navbar>li>ul>p {
+  font-size: 1.5em;
+  width: auto;
   text-align: center;
 }
 
- .main{
-   display: flex;
-   justify-content: space-between;
-   
- }
- 
-.quick-links{
-  background-color: mistyrose;
-  padding: 10px;
-  flex-basis: 40%;
-  
-  
-}
-.quick-links li ul a{
-  text-decoration: none;
-  color: mediumblue;
-  font: 20px;
-  font-weight: bold;
-  
+.navbar>li>ul>p:hover {
+  background: lime;
+  transition: 500ms;
+  border-radius: 4.5px;
+  width: auto;
 }
 
-.about{
-  background-color: #68bfd8;
-  padding: 10px;
-  text-align: center;
-  color: wheat;
+@media (min-width: 600px) {
+  .navbar {
+    background: turquoise;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    height: auto;
+  }
+
+  .navbar li {
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: row;
+    display: flex;
+    /* justify-content: space-between; */
+  }
+
+  .navbar>li>ul {
+    padding-left: 20px;
+  }
 }
-
-
-.services{
-  display: flex;
-  
-  flex-direction: row;
-  
-}
-
-.services > div{
-  background-color: palegoldenrod;
-  margin:5px 10px;
-  padding: 10px;
-  border: 2px double brown;
-  text-align: center;
-}
-
-
-
-
-@media (max-width:300px) {
-.navbar{
-  display: flex ;
-   flex-direction: column;
-   }
-   .logo{
-     justify-content: center;
-   }
-}
-
-
-
-
-
-
